@@ -37,10 +37,10 @@ Recipes can be stored in a JSON file using a two-pass loading algorithm:
   {
     "item_type": "PALM_SUGAR",
     "is_craftable": true,
-    "yield": 3,
+    "yield_": 3,
     "components": [
-      [8, "FIRE_CRYSTAL"],
-      [6, "PALM_SYRUP"]
+      {"quantity": 8, "item_type": "FIRE_CRYSTAL"},
+      {"quantity": 6, "item_type": "PALM_SYRUP"}
     ]
   },
   {

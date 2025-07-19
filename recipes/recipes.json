@@ -1,0 +1,53 @@
+[
+  {
+    "item_type": "PALM_SUGAR",
+    "is_craftable": true,
+    "yield_": 3,
+    "components": [
+      {"quantity": 8, "item_type": "FIRE_CRYSTAL"},
+      {"quantity": 6, "item_type": "PALM_SYRUP"}
+    ]
+  },
+  {
+    "item_type": "TSAI_TOU_VOUNOU",
+    "is_craftable": true,
+    "yield_": 3,
+    "components": [
+      {"quantity": 8, "item_type": "FIRE_CRYSTAL"},
+      {"quantity": 8, "item_type": "WATER_CRYSTAL"},
+      {"quantity": 2, "item_type": "SIDERITIS_LEAVES"},
+      {"quantity": 2, "item_type": "AMBROSIAL_WATER"},
+      {"quantity": 1, "item_type": "PALM_SUGAR"},
+      {"quantity": 1, "item_type": "CINNAMON"},
+      {"quantity": 1, "item_type": "LEMONETTE"}
+    ]
+  },
+  {
+    "item_type": "FIRE_CRYSTAL",
+    "is_craftable": false
+  },
+  {
+    "item_type": "WATER_CRYSTAL",
+    "is_craftable": false
+  },
+  {
+    "item_type": "SIDERITIS_LEAVES",
+    "is_craftable": false
+  },
+  {
+    "item_type": "AMBROSIAL_WATER",
+    "is_craftable": false
+  },
+  {
+    "item_type": "CINNAMON",
+    "is_craftable": false
+  },
+  {
+    "item_type": "LEMONETTE",
+    "is_craftable": false
+  },
+  {
+    "item_type": "PALM_SYRUP",
+    "is_craftable": false
+  }
+]

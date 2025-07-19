@@ -87,7 +87,7 @@ To craft 300 of 'Tsai Tou Vounou', you need:
 Requires Python 3.10+.
 
 ```bash
-git clone https://github.com/yourusername/Recipy.git
+git clone https://github.com/RocherDouteux/Recipy.git
 cd Recipy
 python main.py
 ```

@@ -2,6 +2,9 @@
   {
     "item_type": "PALM_SUGAR",
     "is_craftable": true,
+    "jobs": [
+      "CULINARIAN"
+    ],
     "yield_": 3,
     "components": [
       {"quantity": 8, "item_type": "FIRE_CRYSTAL"},
@@ -11,6 +14,9 @@
   {
     "item_type": "TSAI_TOU_VOUNOU",
     "is_craftable": true,
+    "jobs": [
+      "CULINARIAN"
+    ],
     "yield_": 3,
     "components": [
       {"quantity": 8, "item_type": "FIRE_CRYSTAL"},
@@ -24,30 +30,51 @@
   },
   {
     "item_type": "FIRE_CRYSTAL",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "BOTANIST", "MINER"
+    ]
   },
   {
     "item_type": "WATER_CRYSTAL",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "BOTANIST", "MINER"
+    ]
   },
   {
     "item_type": "SIDERITIS_LEAVES",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "BOTANIST"
+    ]
   },
   {
     "item_type": "AMBROSIAL_WATER",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "MINER"
+    ]
   },
   {
     "item_type": "CINNAMON",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "BOTANIST"
+    ]
   },
   {
     "item_type": "LEMONETTE",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "BOTANIST"
+    ]
   },
   {
     "item_type": "PALM_SYRUP",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "BOTANIST"
+    ]
   }
 ]

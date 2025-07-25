@@ -1,6 +1,6 @@
 import json
 
-from domain.Item import Item, ItemType
+from domain.Item import Item, ItemType, JobType
 
 
 def load_items_from_json(file_path):
@@ -10,10 +10,15 @@ def load_items_from_json(file_path):
     # Pass 1: create recipes without components
     item_map = {}
     for entry in data:
-        item_type = ItemType[entry["item_type"]]
+        item_type = ItemType[entry.get("item_type", ItemType.UNKNOWN)]
         is_craftable = entry.get("is_craftable", False)
+
+        jobs = []
+        for job in entry.get("jobs", []):
+            jobs.append(JobType[job])
+
         yield_ = entry.get("yield_", 1)
-        item_map[item_type] = Item(item_type=item_type, is_craftable=is_craftable, yield_=yield_, components=None)
+        item_map[item_type] = Item(item_type=item_type, is_craftable=is_craftable, yield_=yield_, components=None, jobs=jobs)
 
     # Pass 2: assign components (link existing Item objects)
     for entry in data:

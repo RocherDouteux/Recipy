@@ -98,7 +98,7 @@ python main.py
 Recipy/
 ├── domain/
 │   ├── Item.py
-│   ├── InMemoryRepository.py
+│   ├── ItemRepository.py
 │   ├── ItemType.py
 │   └── Loader.py
 ├── recipes/

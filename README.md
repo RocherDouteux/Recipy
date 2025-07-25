@@ -15,6 +15,7 @@
 Each item includes:
 - `item_type`: the item's identifier (e.g. `PALM_SUGAR`)
 - `is_craftable`: whether it's crafted or gathered
+- `jobs`: the jobs needed to gather or craft the item (e.g. `BOTANIST`)
 - `components`: list of `(quantity, item_type)` tuples for craftable items
 - `yield_`: number of items produced per craft (default is 1)
 
@@ -37,6 +38,9 @@ Recipes can be stored in a JSON file using a two-pass loading algorithm:
   {
     "item_type": "PALM_SUGAR",
     "is_craftable": true,
+    "jobs": [
+      "CULINARIAN"
+    ],
     "yield_": 3,
     "components": [
       {"quantity": 8, "item_type": "FIRE_CRYSTAL"},
@@ -45,7 +49,10 @@ Recipes can be stored in a JSON file using a two-pass loading algorithm:
   },
   {
     "item_type": "PALM_SYRUP",
-    "is_craftable": false
+    "is_craftable": false,
+    "jobs": [
+      "BOTANIST"
+    ]
   }
 ]
 ```
@@ -80,6 +87,11 @@ To craft 300 of 'Tsai Tou Vounou', you need:
 - 200x Palm Syrup
 - 100x Cinnamon
 - 100x Lemonette
+```
+
+### Job view
+```
+'Fire crystal' can be acquired as: Botanist, Miner
 ```
 
 ## Installation

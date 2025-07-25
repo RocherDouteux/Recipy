@@ -37,10 +37,10 @@ Recipes can be stored in a JSON file using a two-pass loading algorithm:
   {
     "item_type": "PALM_SUGAR",
     "is_craftable": true,
-    "yield": 3,
+    "yield_": 3,
     "components": [
-      [8, "FIRE_CRYSTAL"],
-      [6, "PALM_SYRUP"]
+      {"quantity": 8, "item_type": "FIRE_CRYSTAL"},
+      {"quantity": 6, "item_type": "PALM_SYRUP"}
     ]
   },
   {
@@ -87,7 +87,7 @@ To craft 300 of 'Tsai Tou Vounou', you need:
 Requires Python 3.10+.
 
 ```bash
-git clone https://github.com/yourusername/Recipy.git
+git clone https://github.com/RocherDouteux/Recipy.git
 cd Recipy
 python main.py
 ```
@@ -98,7 +98,7 @@ python main.py
 Recipy/
 ├── domain/
 │   ├── Item.py
-│   ├── InMemoryRepository.py
+│   ├── ItemRepository.py
 │   ├── ItemType.py
 │   └── Loader.py
 ├── recipes/

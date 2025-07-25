@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from domain.Item import Item, ItemType
+from domain.Item import Item, ItemType, JobType
 
 
 class ItemRepository:
@@ -24,3 +24,13 @@ class ItemRepository:
 
     def get_items(self) -> List[Item]:
         return self.items
+
+    def filter_by_jobs(self, filter_with: List[JobType]) -> List[Item]:
+        items = []
+
+        for item in self.items:
+            current_item_jobs = item.jobs
+            if all(must_have_job in current_item_jobs for must_have_job in filter_with):
+                items.append(item)
+
+        return items

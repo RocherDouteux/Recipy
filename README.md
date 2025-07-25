@@ -124,7 +124,6 @@ Recipy/
 - Inventory-aware component deduction
 - UI or web interface
 - Integration with real FFXIV APIs
-- Sorting/filtering by Job
 
 ## License
 
